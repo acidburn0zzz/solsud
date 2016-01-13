@@ -94,8 +94,7 @@ li a:hover {
 #block-locale-language ul li {
   text-transform: lowercase;
   text-align: right;
-  font-size: 16px;
-  line-height: 1.8em;
+  line-height: 28.8px;
   list-style: none;
 }
 
@@ -259,7 +258,6 @@ li a:hover {
 }
 
 #sidebar-first ul li {
-  font-size: 16px;
   line-height: 16px;
   padding-bottom: 15px;
 }
@@ -293,7 +291,6 @@ li a:hover {
 }
 
 #sidebar-second ul li {
-  font-size: 16px;
   line-height: 24px;
 }
 
@@ -340,6 +337,21 @@ li a:hover {
   margin: 0;
 }
 
+#content ol {
+  list-style: decimal;
+  padding: 15px 15px 0 38px;
+  margin: 0;
+}
+
+#content ol ul {
+  padding: 15px 15px 0 15px;
+}
+
+#content ol ul ul {
+  list-style: none;
+  padding: 0 15px 0 15px;
+}
+
 #content table {
   margin: 10px 0 0 15px;
   border-collapse: collapse;
@@ -360,22 +372,11 @@ hr {
   margin: 48px auto 30px auto;
 }
 
-#content p { font-size:16px; color:#000; line-height:150%; padding-left:15px; margin: 16px 0 0 0;}
-#content ol { list-style:decimal; padding:15px 15px 0 53px; }
-/* #content ul { list-style-image:url(../images/rond.png); padding:15px 15px 0 45px; } */
-/* #content li { font-size:16px; color:#000; line-height:150%; } */
-#content ol ul { list-style-image:url(../images/rond.png); padding:15px 15px 0 15px; }
-#content ol ul ul   { list-style:none; padding:0 15px 0 15px; }
-#content th { font-size:16px; color:#000; text-align:left; height:24px; width:150px; }
-#content td { font-size:16px; color:#000; text-align:left; height:24px; width:300px; }
-#content iframe   { padding:15px 0 0 30px; }
-.frais th { font-size:16px; text-align:left; width:530px; }
-.frais td { font-size:16px; text-align:right; width:90px; }
-img.ligne { width:500px; padding-left:95px; margin:25px 0 25px 0; }
-div.setThumb { float:left; }
-div.setThumb img  { padding:25px 0 0 30px; }
-div.setTitle { font-size:18px; color:#194223; font-weight:bold; padding:8px 0 0 30px; }
-
+#content p {
+  line-height:150%;
+  padding-left:15px;
+  margin: 15px 0 0 0;
+}
 
 .locale-untranslated {
   text-decoration: none;
