@@ -1,3 +1,3 @@
 # solsud
 
-Thème Drupal pour le site http://solsud.com
+Thème Drupal 7 pour le site http://solsud.com
