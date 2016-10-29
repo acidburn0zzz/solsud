@@ -218,8 +218,23 @@ li a:hover {
   float: left;
 }
 
-#footer img {
+#footer .block:first-child {
+  float: left;
+  width: 74%;
+}
+
+#footer .block:first-child img {
   margin-right: 8px;
+}
+
+#footer .block:last-child {
+  float: right;
+  width: 26%;
+  text-align: right;
+}
+
+#footer .block:last-child h2 {
+  padding-right: 0;
 }
 
 /**
