@@ -27,7 +27,7 @@ body {
   -moz-border-radius:15px;
   border-radius:15px;
 }
- 
+
 a:link,
 a:visited,
 a:active,
@@ -207,7 +207,7 @@ li a:hover {
   -moz-border-radius-bottomleft: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-} 
+}
 
 #footer h2 {
   margin: 0;
@@ -301,7 +301,7 @@ li a:hover {
 
 #sidebar-second ul {
   list-style-image: url("../images/rond.png");
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 30px 15px;
   margin: 0;
 }
 
@@ -313,10 +313,14 @@ li a:hover {
  * content
  */
 #content {
-  width: 690px;
+  width: 930px;
   float: left;
   background: #fff;
   padding: 15px 15px 45px 15px
+}
+
+.node-type-page #content {
+  width: 690px;
 }
 
 #content h1 {
