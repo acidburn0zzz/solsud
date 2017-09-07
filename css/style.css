@@ -438,3 +438,10 @@ label {
   margin-right: 10px;
   background: #e6e6e6;
 }
+
+/**
+ * Galeries
+ */
+.field-name-field-photos .field-item {
+  margin-top: 20px;
+}
