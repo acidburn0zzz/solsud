@@ -1,3 +1,13 @@
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="page-wrapper">
   <div id="page">
     <div id="header">
@@ -28,14 +38,16 @@
             ),
           )); ?>
         </div>
-        <div id="slideshow">
-          <?php for ($i = 1; $i <= 12; $i++): ?>
-            <?php if ($i == 1): ?>
-              <img class="active" src="/<?php print drupal_get_path('theme', 'solsud'); ?>/images/<?php print $i; ?>.jpg">
-            <?php endif; ?>
-            <img src="/<?php print drupal_get_path('theme', 'solsud'); ?>/images/<?php print $i; ?>.jpg">
-          <?php endfor; ?>
-        </div>
+        <?php if ($node->type == 'page'): ?>
+          <div id="slideshow">
+            <?php for ($i = 1; $i <= 12; $i++): ?>
+              <?php if ($i == 1): ?>
+                <img class="active" src="/<?php print drupal_get_path('theme', 'solsud'); ?>/images/<?php print $i; ?>.jpg">
+              <?php endif; ?>
+              <img src="/<?php print drupal_get_path('theme', 'solsud'); ?>/images/<?php print $i; ?>.jpg">
+            <?php endfor; ?>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
     <?php if ($messages): ?>
